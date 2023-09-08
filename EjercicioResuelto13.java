@@ -1,3 +1,4 @@
+//Ejercicio calcular descuento
 import java.util.Scanner;
 public class EjercicioResuelto13 {
     public static void main(String[] args) {
@@ -16,10 +17,8 @@ public class EjercicioResuelto13 {
                 System.out.println("El color ingresado es incorrecto. Intentelo de nuevo.");
             }
         }
-        //System.out.println(valor_compra);
-        //System.out.println(colorB);
         double descuento=0;
-        if(colorB.equals("blanca")){
+        if(colorB.equals("blanca")){ //Condicionales para calcular descuento
             descuento=0;
         } else if(colorB.equals("verde")) {
             descuento=valor_compra*0.10;
@@ -31,7 +30,8 @@ public class EjercicioResuelto13 {
             descuento=valor_compra;
         }
         double valor_pagar=valor_compra-descuento;
-        System.out.println("Su descuento fue de: "+descuento);
+        //Impresiones
+        System.out.println("Su descuento fue del: "+descuento);
         System.out.println("El valor a pagar es de: "+valor_pagar);
     }
 }
